@@ -85,6 +85,7 @@ font-size: 16vmin;
 
 .forecast {
 width: 20%;
+vertical-align: top;
 }
 
 #forecast1 {
@@ -103,7 +104,7 @@ color: #777777;
 color: #777777;
 }
 
-.wi {
+#wrapper .wi {
 font-size: 14vmin;
  line-height: 19vmin;
 }
@@ -111,7 +112,7 @@ font-size: 14vmin;
  height: 56vh;
 }
 #currently .wi {
-font-size: 15vmin;
+font-size: 18vmin;
 }
 
 #forecastHeading {
@@ -125,10 +126,11 @@ height: 100px;
 .day {
 font-size: 3.5vmin;
 margin-bottom: 1.5vmin;
+margin-top: 1.5vmin;
 }
 .desc {
 font-size: 3.5vmin;
- margin-top: .5vmin;
+ margin-top: 2.5vmin;
 margin-bottom: 0.5vmin;
 }
 .highTemp {
@@ -188,11 +190,22 @@ and (orientation : landscape) {
 	.temp {
 	    font-size: 14vmin;
 	}
-	.wi {
+	#currently .wi {
 	    line-height: 15vmin !important;
 	}
-	.desc, .metroName	 {
+	.tempDesc, .metroName	 {
 		line-height: 8vmin;
+	}
+	.forecast .desc {
+		/*height: 30px;*/
+	}
+	.forecast .day {
+		margin-bottom: 2vmin;
+		margin-top: 0;
+	}
+	.forecast .wi {
+	    line-height: 15vmin;
+    	font-size: 12vmin;
 	}
 }
 
