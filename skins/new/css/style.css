@@ -44,8 +44,8 @@ font-size: 16vmin;
 }
 .metroTile .metroName {
 	font-size: 8vmin;
-    margin-bottom: 0.5vmin;
-    margin-top: 2.5vmin;
+    margin-bottom: 3vmin;
+    margin-top: 3vmin;
 }
 .metroTile .metroResult {
 	font-size: 3.5vmin;
@@ -190,18 +190,21 @@ and (orientation : landscape) {
 	.temp {
 	    font-size: 14vmin;
 	}
+	#currently {
+		height: 53vh;
+	}
 	#currently .wi {
 	    line-height: 15vmin !important;
 	}
-	.tempDesc, .metroName	 {
+	#currently .tempDesc, .metroTile .metroName	 {
 		line-height: 8vmin;
+		font-size: 6vmin;
 	}
 	.forecast .desc {
 		/*height: 30px;*/
 	}
 	.forecast .day {
 		margin-bottom: 2vmin;
-		margin-top: 0;
 	}
 	.forecast .wi {
 	    line-height: 15vmin;
