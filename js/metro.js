@@ -22,7 +22,8 @@
 			} else {
 				$metroResult.append('<span class="color '+train.Line+'"></span>&nbsp;&nbsp;');
 			}			
-			$metroResult.append('<span class="destination">'+train.DestinationName+'</span>');
+			$metroResult.append('<span class="destination">'+train.DestinationName+'</span>&nbsp;&nbsp;');
+			$metroResult.append('<span class="min">'+train.Min+'</span>');
 			$('#metroContainer').append($metroResult);
 		}		
 	}
@@ -39,7 +40,7 @@
 			$('#metroContainer').empty();
 			var i;
 			for(i = 0; i < result.Trains.length; i++) {
-				addMetroTime(result.Trains[i]);
+				// addMetroTime(result.Trains[i]);
 			}			
 		});
 	}
