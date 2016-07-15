@@ -14,17 +14,17 @@
 	// Poll interval
 	var waitBetweenMetroQueriesMS = 10000;
 
-	function addMetroTime(train) {
-		if (train.Group == "2") {
-			var $metroResult = $('<div class="metroResult"></div>');
+	function addMetroTime(train) {		
+		if (train.Group == "2") {			
+			var $metroResult = $('<tr class="metroResult"></tr>');
 			if (train.Line == 'No' || train.Line == '--') {
-				$metroResult.append('<span class="color">--</span>&nbsp;&nbsp;');
+				$metroResult.append('<td class="color">--</td>');
 			} else {
-				$metroResult.append('<span class="color '+train.Line+'"></span>&nbsp;&nbsp;');
+				$metroResult.append('<td class="colorCell"><span class="color '+train.Line+'"></span></td>');
 			}			
-			$metroResult.append('<span class="destination">'+train.DestinationName+'</span>&nbsp;&nbsp;');
-			$metroResult.append('<span class="min">'+train.Min+'</span>');
-			$('#metroContainer').append($metroResult);
+			$metroResult.append('<td class="destination">'+train.DestinationName+'</td>');
+			$metroResult.append('<td class="min">'+train.Min+'</td>');
+			$('#metroTable').append($metroResult);
 		}		
 	}
 
@@ -37,10 +37,10 @@
 			url: metroApiUrl + stationId + "?" + $.param(params)
 		}).done(function (result) {
 			// console.log(result.Trains);
-			$('#metroContainer').empty();
+			$('#metroTable').empty();
 			var i;
 			for(i = 0; i < result.Trains.length; i++) {
-				// addMetroTime(result.Trains[i]);
+				addMetroTime(result.Trains[i]);
 			}			
 		});
 	}

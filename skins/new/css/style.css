@@ -66,7 +66,20 @@ font-size: 16vmin;
 .metroTile .metroResult .color.SV {
 	background-color: #BDBDBD;
 }
+.metroTile #metroTable {
+	width: 90%;
+	margin: 0 auto;
+}
 
+.metroTile #metroTable .metroResult td.colorCell{
+	width: 15%;
+}
+.metroTile #metroTable .metroResult td.destination{
+	width: 70%;
+}
+.metroTile #metroTable .metroResult td.min{
+	width: 15%;
+}
 
 .forecast {
 width: 20%;
