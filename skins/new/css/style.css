@@ -72,13 +72,15 @@ font-size: 16vmin;
 }
 
 .metroTile #metroTable .metroResult td.colorCell{
-	width: 15%;
+	/*width: 15%;*/
 }
 .metroTile #metroTable .metroResult td.destination{
-	width: 70%;
+	/*width: 70%;*/
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 .metroTile #metroTable .metroResult td.min{
-	width: 15%;
+	/*width: 15%;*/
 }
 
 .forecast {

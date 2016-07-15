@@ -18,12 +18,12 @@
 		if (train.Group == "2") {			
 			var $metroResult = $('<tr class="metroResult"></tr>');
 			if (train.Line == 'No' || train.Line == '--') {
-				$metroResult.append('<td class="color">--</td>');
+				$metroResult.append('<td width="15%" class="color">--</td>');
 			} else {
-				$metroResult.append('<td class="colorCell"><span class="color '+train.Line+'"></span></td>');
+				$metroResult.append('<td width="15%" class="colorCell"><span class="color '+train.Line+'"></span></td>');
 			}			
-			$metroResult.append('<td class="destination">'+train.DestinationName+'</td>');
-			$metroResult.append('<td class="min">'+train.Min+'</td>');
+			$metroResult.append('<td width="70%" class="destination">'+train.DestinationName+'</td>');
+			$metroResult.append('<td width="15%" class="min">'+train.Min+'</td>');
 			$('#metroTable').append($metroResult);
 		}		
 	}
