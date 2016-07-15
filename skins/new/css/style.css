@@ -105,13 +105,13 @@ color: #777777;
 
 .wi {
 font-size: 14vmin;
- line-height: 19vmin !important;
+ line-height: 19vmin;
 }
 #currently {
  height: 56vh;
 }
 #currently .wi {
-font-size: 18vmin;
+font-size: 15vmin;
 }
 
 #forecastHeading {
@@ -128,7 +128,7 @@ margin-bottom: 1.5vmin;
 }
 .desc {
 font-size: 3.5vmin;
- margin-top: 2.5vmin;
+ margin-top: .5vmin;
 margin-bottom: 0.5vmin;
 }
 .highTemp {
@@ -169,5 +169,30 @@ background: rgba(255,255,255,0.2);
 display: inline-block;
 height: 100%;
 width: 100%;
-padding-top: 4vh;
+padding-top: 6vh;
 }
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { 
+	#currentlyWrapper {
+	    padding-top: 5vh;
+	}
+	#currently .wi {
+	    font-size: 13vmin;
+	}
+	.metroTile .icon i {
+	    font-size: 14vmin;
+	}
+	.temp {
+	    font-size: 14vmin;
+	}
+	.wi {
+	    line-height: 15vmin !important;
+	}
+	.desc, .metroName	 {
+		line-height: 8vmin;
+	}
+}
+
