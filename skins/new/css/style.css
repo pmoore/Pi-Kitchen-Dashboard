@@ -35,6 +35,42 @@ text-align: center;
 background: black;
 }
 
+<<<<<<< HEAD
+=======
+.metroTile {
+	/*width: 20%;*/
+	/*padding-top: 4vh;		*/
+}
+.metroTile .icon i {
+font-size: 16vmin;
+}
+.metroTile .metroName {
+	font-size: 8vmin;
+    margin-bottom: 0.5vmin;
+    margin-top: 2.5vmin;
+}
+.metroTile .metroResult {
+	font-size: 3.5vmin;
+}
+
+.metroTile .metroResult .color {
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+}
+.metroTile .metroResult .color.BL {
+	background-color: #3D68ED;
+}
+.metroTile .metroResult .color.OR {
+	background-color: #ED7A3D;
+}
+.metroTile .metroResult .color.SV {
+	background-color: #BDBDBD;
+}
+
+
+>>>>>>> pmoore/master
 .forecast {
 width: 20%;
 }
@@ -113,11 +149,20 @@ font-size: 15vmin;
 font-size: 5vmin;
 color: #CCCCCC;
 }
+<<<<<<< HEAD
+=======
+.greyTile {
+background: rgba(255,255,255,0.2);
+}
+>>>>>>> pmoore/master
 
 #currentlyWrapper {
 display: inline-block;
 height: 100%;
 width: 100%;
+<<<<<<< HEAD
 background: rgba(255,255,255,0.2);
+=======
+>>>>>>> pmoore/master
 padding-top: 4vh;
 }
